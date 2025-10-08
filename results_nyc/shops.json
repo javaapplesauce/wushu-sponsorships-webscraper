@@ -1,0 +1,1209 @@
+[
+  {
+    "name": "Zhen Pin Café",
+    "address": "98 Mott St Unit 1, New York, NY 10013, USA",
+    "lat": 40.7171726,
+    "lon": -73.9972861,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Yaya Tea Downtown BKLYN",
+    "address": "80 DeKalb Ave, Brooklyn, NY 11201, USA",
+    "lat": 40.6896359,
+    "lon": -73.98004929999999,
+    "website": "https://yayatea.com/store/dekalb-downtown-brooklyn-ny/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://yayatea.com/store/dekalb-downtown-brooklyn-ny/",
+      "https://yayatea.com/contact/",
+      "https://yayatea.com"
+    ]
+  },
+  {
+    "name": "TeaMakers",
+    "address": "15 W 32nd St, New York, NY 10001, USA",
+    "lat": 40.7476395,
+    "lon": -73.9864119,
+    "website": "http://www.teamakersnyc.com/",
+    "source": "google",
+    "mission_excerpt": "Our drinks are made from high quality tea leaves and selected ingredients. All products are 100% guaranteed to arrive fresh and tasty. We test the tea leaves each growing season and all ingredients from time to time to ensure our drinks’ consistent and quality. Best tea needs the best ingredients and we insist on the best for you!",
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.teamakersnyc.com/",
+      "https://www.teamakersnyc.com/about-teamakers",
+      "http://www.teamakersnyc.com"
+    ]
+  },
+  {
+    "name": "PARTEA NYC - Union Square",
+    "address": "220 E 14th St, New York, NY 10003, USA",
+    "lat": 40.7327509,
+    "lon": -73.9863838,
+    "website": "http://www.partea-nyc.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@partea-nyc.com",
+    "crawled_urls": [
+      "http://www.partea-nyc.com/",
+      "http://www.partea-nyc.com/contact-us",
+      "http://www.partea-nyc.com"
+    ]
+  },
+  {
+    "name": "Rui Tea",
+    "address": "10 Provost St, Jersey City, NJ 07302, USA",
+    "lat": 40.7203375,
+    "lon": -74.0391471,
+    "website": "http://ruiteajc.com/",
+    "source": "google",
+    "mission_excerpt": "Contact us with any questions, feedback, or if you are looking to join our team!",
+    "contact_email": "ruiteajc@gmail.com",
+    "crawled_urls": [
+      "http://ruiteajc.com/",
+      "https://www.ruiteajc.com/contact-us"
+    ]
+  },
+  {
+    "name": "Xing Fu Tang",
+    "address": "133 2nd Ave, New York, NY 10003, USA",
+    "lat": 40.7288305,
+    "lon": -73.98785029999999,
+    "website": "http://xingfutang.com/",
+    "source": "google",
+    "mission_excerpt": "Xing Fu Tang (幸福堂), known for making the best hand-crafted brown sugar boba from Taiwan, is finally here in the United States - featuring an open kitchen concept where boba pearls are freshly hand-made hourly and cooked to order for all guests to see what goes into their cups. Xing Fu Tang prides itself in delivering quality products to all guests by using only whole, natural ingredients, instead of artificial syrups and preservatives. All beverages and desserts at Xing Fu Tang are made to order using only high-quality ingredients imported from Taiwan, locally fresh produce, and organic milk. Our signature product is the Brown Sugar Boba Milk, which encompasses our freshly caramelized brown ",
+    "contact_email": null,
+    "crawled_urls": [
+      "http://xingfutang.com/",
+      "http://xingfutang.com/about",
+      "http://xingfutang.com/contact",
+      "https://www.xingfutang.com/about",
+      "http://xingfutang.com"
+    ]
+  },
+  {
+    "name": "Boba Guys Soho",
+    "address": "145 Greene St, New York, NY 10012, USA",
+    "lat": 40.726109,
+    "lon": -73.998722,
+    "website": "http://www.bobaguys.com/",
+    "source": "google",
+    "mission_excerpt": "As we picked up momentum and developed a stronger point of view (e.g. high-quality ingredients, customer service, in-house production), we started seeing that our values transcended bubble tea. From our GOOD magazine column , people were emailing us about starting a business or even Chinese-Taiwanese politics. Some just wanted to be a part of something different. The love and support swelled up so much that we finally decided to open a store in summer 2013.",
+    "contact_email": "info@bobaguys.com",
+    "crawled_urls": [
+      "http://www.bobaguys.com/",
+      "http://www.bobaguys.com/our-story"
+    ]
+  },
+  {
+    "name": "Wolf forest cafe",
+    "address": "213 Pearl St, New York, NY 10038, USA",
+    "lat": 40.7072497,
+    "lon": -74.0061764,
+    "website": "http://www.wolfforestcafe.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.wolfforestcafe.com/",
+      "https://www.wolfforestcafe.com/contact-us/",
+      "http://www.wolfforestcafe.com"
+    ]
+  },
+  {
+    "name": "Débutea Brooklyn",
+    "address": "71 Smith St, Brooklyn, NY 11201, USA",
+    "lat": 40.68935829999999,
+    "lon": -73.98841469999999,
+    "website": "http://www.debutea.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.debutea.com/",
+      "http://www.debutea.com"
+    ]
+  },
+  {
+    "name": "Yaya Tea GRAND",
+    "address": "206 Grand St, New York, NY 10013, USA",
+    "lat": 40.7191263,
+    "lon": -73.9963099,
+    "website": "https://yayatea.com/store/little-italy-manhattan-ny/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://yayatea.com/store/little-italy-manhattan-ny/",
+      "https://yayatea.com/contact/",
+      "https://yayatea.com"
+    ]
+  },
+  {
+    "name": "Dragon Tea",
+    "address": "106 Greenwich St, New York, NY 10006, USA",
+    "lat": 40.7085281,
+    "lon": -74.0136016,
+    "website": "https://www.dragontea914.com/",
+    "source": "google",
+    "mission_excerpt": "2368 Hoffman st, Bronx, NY 10458 914-218-1331 dragonbronxllc@gmail.com",
+    "contact_email": "dragonbronxllc@gmail.com",
+    "crawled_urls": [
+      "https://www.dragontea914.com/",
+      "https://www.dragontea914.com/location/unna-bubbles-and-bites-dragon-teamed/"
+    ]
+  },
+  {
+    "name": "Caffe Vento Espresso & Boba",
+    "address": "555 W 38th St, New York, NY 10018, USA",
+    "lat": 40.7585432,
+    "lon": -73.999612,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Grace Street Coffee & Desserts",
+    "address": "17 W 32nd St 14th Floor, New York, NY 10001, USA",
+    "lat": 40.7477172,
+    "lon": -73.98653019999999,
+    "website": "https://www.bygracestreet.com/",
+    "source": "google",
+    "mission_excerpt": "Located in the heart of New York’s Koreatown, we are easily accessible from the nearest B , D , F , N , Q , R , W , 4 , and 6 trains.",
+    "contact_email": "hello@bygracestreet.com",
+    "crawled_urls": [
+      "https://www.bygracestreet.com/",
+      "https://www.bygracestreet.com/contact"
+    ]
+  },
+  {
+    "name": "Yaya Tea",
+    "address": "51 Chrystie St, New York, NY 10002, USA",
+    "lat": 40.7162347,
+    "lon": -73.9949914,
+    "website": "https://yayatea.com/store/chrystie-chinatown-manhattan-ny/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://yayatea.com/store/chrystie-chinatown-manhattan-ny/",
+      "https://yayatea.com/contact/",
+      "https://yayatea.com"
+    ]
+  },
+  {
+    "name": "uluhuluh",
+    "address": "218 E 14th St, New York, NY 10003, USA",
+    "lat": 40.7326932,
+    "lon": -73.9865216,
+    "website": "http://www.instagram.com/uluhuluh.ny",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "CoCo Fresh Tea & Juice",
+    "address": "420 Grand St, Jersey City, NJ 07302, USA",
+    "lat": 40.7186299,
+    "lon": -74.0523443,
+    "website": "http://cocobubbletea.com/",
+    "source": "google",
+    "mission_excerpt": "CoCo Bubble Tea introduced its all-time favorite bubble tea to New York in the winter of 2011, opening its first store across the street from Baruch College. Over 13 years, we have opened 21 stores in New York, New Jersey, and Massachusetts.",
+    "contact_email": "marketing@cocobubbletea.com",
+    "crawled_urls": [
+      "http://cocobubbletea.com/",
+      "http://cocobubbletea.com/about"
+    ]
+  },
+  {
+    "name": "Brew Memories",
+    "address": "295 7th Ave, Brooklyn, NY 11215, USA",
+    "lat": 40.6677733,
+    "lon": -73.9805664,
+    "website": "https://www.bkbrewmemories.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.bkbrewmemories.com/",
+      "https://www.bkbrewmemories.com"
+    ]
+  },
+  {
+    "name": "Christopher munch shop",
+    "address": "98 Christopher St, New York, NY 10014, USA",
+    "lat": 40.7332,
+    "lon": -74.0046752,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Sing NYC",
+    "address": "182 Bleecker St, New York, NY 10012, USA",
+    "lat": 40.7289284,
+    "lon": -74.0010574,
+    "website": "https://info6324968.wixsite.com/sing-nyc",
+    "source": "google",
+    "mission_excerpt": "Freshness in every bite is our promise — from classic Hong Kong flavors to creative specials that reflect The Authentic Taste. We blend tradition with innovation to serve food that’s comforting, exciting, and always made with heart.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://info6324968.wixsite.com/sing-nyc",
+      "https://info6324968.wixsite.com/sing-nyc/about-us"
+    ]
+  },
+  {
+    "name": "Lazy Sundaes",
+    "address": "170 Front St, Brooklyn, NY 11201, USA",
+    "lat": 40.7022694,
+    "lon": -73.9856071,
+    "website": "http://www.lazysundaes.com/",
+    "source": "google",
+    "mission_excerpt": "We believe in celebrating the small victories; life’s hard, and you’ve earned it.",
+    "contact_email": "hello@lazysundaes.com",
+    "crawled_urls": [
+      "http://www.lazysundaes.com/",
+      "http://www.lazysundaes.com/about",
+      "http://www.lazysundaes.com/contact-us"
+    ]
+  },
+  {
+    "name": "Juju Cafe and Deli",
+    "address": "143 Smith St, Brooklyn, NY 11201, USA",
+    "lat": 40.6869115,
+    "lon": -73.9901908,
+    "website": "http://instagram.com/jujucafe143",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Market Bar & Cafe",
+    "address": "41 Monroe St, New York, NY 10002, USA",
+    "lat": 40.7116577,
+    "lon": -73.9946416,
+    "website": "https://www.seamless.com/menu/ccs-cafe-41-monroe-st-new-york/265909?utm_source=seamless_iosapp&utm_medium=content_owned&utm_campaign=menushare",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.seamless.com/menu/ccs-cafe-41-monroe-st-new-york/265909?utm_source=seamless_iosapp&utm_medium=content_owned&utm_campaign=menushare",
+      "https://www.seamless.com"
+    ]
+  },
+  {
+    "name": "Japan Village",
+    "address": "934 3rd Ave, Brooklyn, NY 11232, USA",
+    "lat": 40.656103,
+    "lon": -74.0064373,
+    "website": "https://japanvillage.com/",
+    "source": "google",
+    "mission_excerpt": "SUNRISE MART Sun - Thu: 11 AM - 8 PM Fri - Sat: 11 AM - 9 PM FOOD HALL Sun - Thu : 11 AM - 7 PM Fri - Sat : 11 AM - 8.30 PM",
+    "contact_email": "info@japanvillage.com",
+    "crawled_urls": [
+      "https://japanvillage.com/",
+      "https://japanvillage.com/about"
+    ]
+  },
+  {
+    "name": "NO GEM",
+    "address": "51 Canal St, New York, NY 10002, USA",
+    "lat": 40.7149614,
+    "lon": -73.9916365,
+    "website": "http://www.instagram.com/nogemnyc",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Sippy Cafe",
+    "address": "200 Franklin St, Brooklyn, NY 11222, USA",
+    "lat": 40.732258,
+    "lon": -73.95779879999999,
+    "website": "https://www.sippycafenyc.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.sippycafenyc.com/",
+      "https://www.sippycafenyc.com"
+    ]
+  },
+  {
+    "name": "TIGER SUGAR",
+    "address": "129 E 45th St Store 4, New York, NY 10017, USA",
+    "lat": 40.7533859,
+    "lon": -73.97428479999999,
+    "website": "http://www.tigersugar.co/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.tigersugar.co/",
+      "http://www.tigersugar.co"
+    ]
+  },
+  {
+    "name": "Café Hestia",
+    "address": "80 Maiden Ln, New York, NY 10038, USA",
+    "lat": 40.7073288,
+    "lon": -74.0077714,
+    "website": "https://cafehestia.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "info@cafehestia.com",
+    "crawled_urls": [
+      "https://cafehestia.com/"
+    ]
+  },
+  {
+    "name": "Round K",
+    "address": "78 Canal St, New York, NY 10002, USA",
+    "lat": 40.7150818,
+    "lon": -73.9931521,
+    "website": "https://www.roundk.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.roundk.com/",
+      "https://www.roundk.com"
+    ]
+  },
+  {
+    "name": "The Hideout Chai Bar",
+    "address": "42 Rivington St, New York, NY 10002, USA",
+    "lat": 40.7210707,
+    "lon": -73.99097909999999,
+    "website": "http://thehideoutnyc.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://thehideoutnyc.com/",
+      "http://thehideoutnyc.com"
+    ]
+  },
+  {
+    "name": "Eataly NYC Flatiron",
+    "address": "200 5th Ave, New York, NY 10010, USA",
+    "lat": 40.742045,
+    "lon": -73.9900845,
+    "website": "https://www.eataly.com/us_en/stores/nyc-flatiron",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Genesis House",
+    "address": "40A 10th Ave, New York, NY 10014, USA",
+    "lat": 40.74148599999999,
+    "lon": -74.008156,
+    "website": "https://www.genesishouse.com/us/en/nyc/index.html",
+    "source": "google",
+    "mission_excerpt": "Overlooking the High Line and Hudson River, Genesis House is nestled among the cobblestone streets of the Meatpacking District, near the effervescent pulse of the West Village, Chelsea and Tribeca neighborhoods. Nearby visitors will find a wealth of upscale shopping, dining, art galleries, entertainment and more. Press: Please direct all media inquiries to Jarred Pellat at jpellat@gma.com .",
+    "contact_email": "info@genesishouseNYC.com",
+    "crawled_urls": [
+      "https://www.genesishouse.com/us/en/nyc/index.html",
+      "https://www.genesishouse.com/us/en/nyc/contact-us.html"
+    ]
+  },
+  {
+    "name": "Maya Congee Cafe - Fulton St",
+    "address": "1013 Fulton St, Brooklyn, NY 11238, USA",
+    "lat": 40.6824839,
+    "lon": -73.9614113,
+    "website": "https://mayacongeecafe.com/",
+    "source": "google",
+    "mission_excerpt": "WORKING WITH PASSION : The work we do will become routine and eventually become monotonous – if we allow it. As we work, we are intentionally asking ourselves – How can I make this taste better? How can we make our food look better? How can we make this easier? How can we make this more enjoyable? How can we do better? We believe that as we better ourselves, the eventual result is a feeling of pride and confidence only we can build for ourselves in which creates meaning for our time spent. These skillsets become us everywhere we choose to go. The more passion we find in our work, the better our food will taste.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://mayacongeecafe.com/",
+      "https://mayacongeecafe.com/about/",
+      "https://mayacongeecafe.com"
+    ]
+  },
+  {
+    "name": "Fujiissa",
+    "address": "108 W 39th St, New York, NY 10018, USA",
+    "lat": 40.7530225,
+    "lon": -73.9861561,
+    "website": "https://fujiissa.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "fujiissa3875@fujiissa.com",
+    "crawled_urls": [
+      "https://fujiissa.com/",
+      "https://fujiissa.com"
+    ]
+  },
+  {
+    "name": "Semicolon Cafe",
+    "address": "516a 3rd Ave, New York, NY 10016, USA",
+    "lat": 40.74621,
+    "lon": -73.97810199999999,
+    "website": "http://semicoloncafe.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Open Market",
+    "address": "15 William St, New York, NY 10005, USA",
+    "lat": 40.705309,
+    "lon": -74.010183,
+    "website": "http://www.openmarket.nyc/",
+    "source": "google",
+    "mission_excerpt": "Online order is now available at Open Market! Enjoy your favorite meal at your home or office!",
+    "contact_email": "15openmarket@gmail.com",
+    "crawled_urls": [
+      "http://www.openmarket.nyc/",
+      "http://www.openmarket.nyc/contact"
+    ]
+  },
+  {
+    "name": "Nostrand Coffee Roaster",
+    "address": "261 Nostrand Ave, Brooklyn, NY 11216, USA",
+    "lat": 40.6897767,
+    "lon": -73.9512151,
+    "website": "http://www.nostrandcafe.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.nostrandcafe.com/",
+      "http://www.nostrandcafe.com"
+    ]
+  },
+  {
+    "name": "Tomiz Cafe",
+    "address": "1073 6th Ave 2nd Floor, New York, NY 10018, USA",
+    "lat": 40.7540683,
+    "lon": -73.984905,
+    "website": "https://tomizny.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://tomizny.com/",
+      "https://tomizny.com"
+    ]
+  },
+  {
+    "name": "Tadaima",
+    "address": "51 35th St Building 5, 2nd floor, Brooklyn, NY 11232, USA",
+    "lat": 40.6569249,
+    "lon": -74.0068304,
+    "website": "https://www.tadaimanyc.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.tadaimanyc.com/",
+      "https://www.tadaimanyc.com"
+    ]
+  },
+  {
+    "name": "ANDO patisserie",
+    "address": "214 E 10th St, New York, NY 10003, USA",
+    "lat": 40.7293258,
+    "lon": -73.98596309999999,
+    "website": "https://www.andopatisserie-official.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.andopatisserie-official.com/",
+      "https://www.andopatisserie-official.com"
+    ]
+  },
+  {
+    "name": "Asia Supermarket Belfast",
+    "address": "40 Ormeau Embankment, Belfast BT6 8LU, UK",
+    "lat": 54.5909427,
+    "lon": -5.9128813,
+    "website": "http://www.asiabelfast.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.asiabelfast.com/",
+      "http://www.asiabelfast.com"
+    ]
+  },
+  {
+    "name": "Terminal B Mart / Sippy Cafe",
+    "address": "21 Avenue B, New York, NY 10009, USA",
+    "lat": 40.7221008,
+    "lon": -73.983154,
+    "website": "http://terminalbmart.com/",
+    "source": "google",
+    "mission_excerpt": "This site is protected by hCaptcha and the hCaptcha Privacy Policy and Terms of Service apply.",
+    "contact_email": null,
+    "crawled_urls": [
+      "http://terminalbmart.com/",
+      "http://terminalbmart.com/pages/contact",
+      "http://terminalbmart.com/pages/about-us",
+      "http://terminalbmart.com"
+    ]
+  },
+  {
+    "name": "Julie & … Coffee and Juice",
+    "address": "28 W 32nd St, New York, NY 10001, USA",
+    "lat": 40.74761460000001,
+    "lon": -73.9870841,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Koré Coffee",
+    "address": "26A Elizabeth St, New York, NY 10013, USA",
+    "lat": 40.7161808,
+    "lon": -73.9970865,
+    "website": "http://korecoffee.nyc/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://korecoffee.nyc/",
+      "http://korecoffee.nyc"
+    ]
+  },
+  {
+    "name": "Jubilee Marketplace (Supermarket)",
+    "address": "145 West St Floor 1, Brooklyn, NY 11222, USA",
+    "lat": 40.7321227,
+    "lon": -73.9598154,
+    "website": "https://jubileemarketplace.com/",
+    "source": "google",
+    "mission_excerpt": "Fast forward to 2023, Jubilee Marketplace opens its biggest store in Greenpoint, Brooklyn. We are pushing the boundaries of the typical supermarket by being the first Supermarket to offer local pasture raised whole animal butchery within house dry ager, local organic farm produce, cheese shop and in-house charcuterie, sustainable seafood program, and grocery items like no other.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://jubileemarketplace.com/",
+      "https://jubileemarketplace.com/about/",
+      "https://jubileemarketplace.com/contact/",
+      "https://jubileemarketplace.com"
+    ]
+  },
+  {
+    "name": "Maiko Matcha Cafe",
+    "address": "30 Rockefeller Center Concourse C033, New York, NY 10112, USA",
+    "lat": 40.7588357,
+    "lon": -73.9792205,
+    "website": "https://www.instagram.com/maikomatchanyc?igsh=MXJlZGpjM2d5OGluMQ==&utm_source=qr",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "MATCHA HOUSE",
+    "address": "203 E 10th St, New York, NY 10003, USA",
+    "lat": 40.729689,
+    "lon": -73.98622979999999,
+    "website": "https://matchahousenyc.com/",
+    "source": "google",
+    "mission_excerpt": "Monday: 8 AM - 5:30 PM Tuesday: 8 AM - 5:30 PM Wednesday: 8 AM - 5:30 PM Thursday: 8 AM - 5:30 PM Friday: 8 AM - 5:30 PM Saturday: 9 AM - 6:00 PM Sunday:         Closed",
+    "contact_email": "contact@matchahousenyc.com",
+    "crawled_urls": [
+      "https://matchahousenyc.com/",
+      "https://matchahousenyc.com/contact"
+    ]
+  },
+  {
+    "name": "Brooklyn Beauty / Fashion Labo",
+    "address": "300 7th St, Brooklyn, NY 11215, USA",
+    "lat": 40.6706569,
+    "lon": -73.98625299999999,
+    "website": "http://brooklyn-bbfl.com/?fbclid=PAZXh0bgNhZW0CMTEAAadBGnqNqLaz5x61ZTX3wwcdbAWD_-kqFAhVbwEBakd6ZyGSpcmBr2Z48ZK2gA_aem_Jsmle4Yg6LDkYkqpzyaNlQ",
+    "source": "google",
+    "mission_excerpt": "Brooklyn is where many artists have moved to create a unique culture. BBFL’s mission is to create a sustainable and creative community inspired by the way of life and thinking of the people who live in Brooklyn. BBFL creates a platform as a bridge between Brooklyn, Japan, and the world.",
+    "contact_email": null,
+    "crawled_urls": [
+      "http://brooklyn-bbfl.com/?fbclid=PAZXh0bgNhZW0CMTEAAadBGnqNqLaz5x61ZTX3wwcdbAWD_-kqFAhVbwEBakd6ZyGSpcmBr2Z48ZK2gA_aem_Jsmle4Yg6LDkYkqpzyaNlQ",
+      "https://brooklyn-bbfl.com/about/",
+      "https://brooklyn-bbfl.com/about/our-story/",
+      "https://brooklyn-bbfl.com/about/floor-map/",
+      "https://brooklyn-bbfl.com/about/our-partners/",
+      "https://brooklyn-bbfl.com/contact/",
+      "http://brooklyn-bbfl.com"
+    ]
+  },
+  {
+    "name": "Cafe Joah",
+    "address": "212 Avenue A, New York, NY 10009, USA",
+    "lat": 40.7298237,
+    "lon": -73.98062329999999,
+    "website": "http://cafejoah.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Matcha 108",
+    "address": "108 Madison St, New York, NY 10002, USA",
+    "lat": 40.7120518,
+    "lon": -73.99516059999999,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Cha Cha Matcha (NoMad)",
+    "address": "1158 Broadway, New York, NY 10001, USA",
+    "lat": 40.7445939,
+    "lon": -73.9886843,
+    "website": "http://chachamatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@chachamatcha.com",
+    "crawled_urls": [
+      "http://chachamatcha.com/",
+      "http://chachamatcha.com/pages/contact-us",
+      "http://chachamatcha.com"
+    ]
+  },
+  {
+    "name": "Isshiki Matcha",
+    "address": "176 8th Ave, New York, NY 10011, USA",
+    "lat": 40.74262,
+    "lon": -74.00005240000002,
+    "website": "https://www.isshikimatcha.com/",
+    "source": "google",
+    "mission_excerpt": "A Taste of Tranquility from Uji, Kyoto Nestled in the heart of New York City, Isshiki Matcha brings you the essence of calm and tradition from the serene landscapes of Uji, Kyoto. Our name, \"Isshiki,\" meaning \"one color\" in Japanese, reflects the purity and simplicity of matcha - a vibrant green hue that symbolizes both vitality and tranquility. But Isshiki Matcha is more than just a beverage - it's a moment of stillness in a bustling world, a grounding anchor in your daily routine. We believe that amidst the chaos of modern life, everyone deserves a moment of zen, a quiet respite to reconnect with themselves and find balance.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.isshikimatcha.com/",
+      "https://www.isshikimatcha.com/pages/about-us",
+      "https://www.isshikimatcha.com/pages/contact",
+      "https://www.isshikimatcha.com"
+    ]
+  },
+  {
+    "name": "Isshiki Matcha",
+    "address": "183 Grand St, New York, NY 10013, USA",
+    "lat": 40.719236,
+    "lon": -73.9976949,
+    "website": "https://www.isshikimatcha.com/",
+    "source": "google",
+    "mission_excerpt": "A Taste of Tranquility from Uji, Kyoto Nestled in the heart of New York City, Isshiki Matcha brings you the essence of calm and tradition from the serene landscapes of Uji, Kyoto. Our name, \"Isshiki,\" meaning \"one color\" in Japanese, reflects the purity and simplicity of matcha - a vibrant green hue that symbolizes both vitality and tranquility. But Isshiki Matcha is more than just a beverage - it's a moment of stillness in a bustling world, a grounding anchor in your daily routine. We believe that amidst the chaos of modern life, everyone deserves a moment of zen, a quiet respite to reconnect with themselves and find balance.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.isshikimatcha.com/",
+      "https://www.isshikimatcha.com/pages/about-us",
+      "https://www.isshikimatcha.com/pages/contact",
+      "https://www.isshikimatcha.com"
+    ]
+  },
+  {
+    "name": "Isshiki Matcha",
+    "address": "138 2nd Ave Inside Moko, New York, NY 10003, USA",
+    "lat": 40.7287206,
+    "lon": -73.9870487,
+    "website": "https://isshikimatcha.com/",
+    "source": "google",
+    "mission_excerpt": "A Taste of Tranquility from Uji, Kyoto Nestled in the heart of New York City, Isshiki Matcha brings you the essence of calm and tradition from the serene landscapes of Uji, Kyoto. Our name, \"Isshiki,\" meaning \"one color\" in Japanese, reflects the purity and simplicity of matcha - a vibrant green hue that symbolizes both vitality and tranquility. But Isshiki Matcha is more than just a beverage - it's a moment of stillness in a bustling world, a grounding anchor in your daily routine. We believe that amidst the chaos of modern life, everyone deserves a moment of zen, a quiet respite to reconnect with themselves and find balance.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://isshikimatcha.com/",
+      "https://isshikimatcha.com/pages/about-us",
+      "https://isshikimatcha.com/pages/contact",
+      "https://isshikimatcha.com"
+    ]
+  },
+  {
+    "name": "12 Matcha",
+    "address": "54 Bond St, New York, NY 10012, USA",
+    "lat": 40.7259475,
+    "lon": -73.99241789999999,
+    "website": "https://12matcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "info@12matcha.com",
+    "crawled_urls": [
+      "https://12matcha.com/",
+      "https://12matcha.com/contact",
+      "https://12matcha.com"
+    ]
+  },
+  {
+    "name": "Aoko Matcha",
+    "address": "275 Bleecker St, New York, NY 10014, USA",
+    "lat": 40.7316255,
+    "lon": -74.0030701,
+    "website": "https://www.aokomatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Matcha Babe (By Selformer)",
+    "address": "137 Grand St, New York, NY 10013, USA",
+    "lat": 40.7201203,
+    "lon": -73.9997376,
+    "website": "http://www.selformer.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Cha Cha Matcha (MADISON)",
+    "address": "477 Madison Ave, New York, NY 10022, USA",
+    "lat": 40.7586981,
+    "lon": -73.97483509999999,
+    "website": "https://chachamatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@chachamatcha.com",
+    "crawled_urls": [
+      "https://chachamatcha.com/",
+      "https://chachamatcha.com/pages/contact-us",
+      "https://chachamatcha.com"
+    ]
+  },
+  {
+    "name": "Sieve Cafe: Matcha & Coffee",
+    "address": "7-57 Seneca Ave, Ridgewood, NY 11385, USA",
+    "lat": 40.7022653,
+    "lon": -73.9065633,
+    "website": "http://sievecafe.com/",
+    "source": "google",
+    "mission_excerpt": "Our mission is to redefine daily indulgence. At SIEVE, we celebrate quality, customization, and community. Our drinks are made with carefully selected ingredients, designed for people who appreciate detail, flavor, and form. We're obsessed with pairing - from fruit to florals to nutty undertones, every drink is intentional.",
+    "contact_email": "filler@godaddy.com",
+    "crawled_urls": [
+      "http://sievecafe.com/",
+      "http://sievecafe.com/about-sieve"
+    ]
+  },
+  {
+    "name": "Cha Cha Matcha",
+    "address": "421 8th Ave suite 40, New York, NY 10001, USA",
+    "lat": 40.7511994,
+    "lon": -73.9953871,
+    "website": "http://www.chachamatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@chachamatcha.com",
+    "crawled_urls": [
+      "http://www.chachamatcha.com/",
+      "http://www.chachamatcha.com/pages/contact-us",
+      "http://www.chachamatcha.com"
+    ]
+  },
+  {
+    "name": "Cha Cha Matcha (NoHo)",
+    "address": "327 Lafayette St, New York, NY 10012, USA",
+    "lat": 40.7254479,
+    "lon": -73.9948252,
+    "website": "http://chachamatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@chachamatcha.com",
+    "crawled_urls": [
+      "http://chachamatcha.com/",
+      "http://chachamatcha.com/pages/contact-us",
+      "http://chachamatcha.com"
+    ]
+  },
+  {
+    "name": "TIGER SUGAR (KOREATOWN)",
+    "address": "42 W 32nd St, New York, NY 10001, USA",
+    "lat": 40.7479247,
+    "lon": -73.9878076,
+    "website": "http://tigersugar.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://tigersugar.com/",
+      "http://tigersugar.com"
+    ]
+  },
+  {
+    "name": "Matchaful",
+    "address": "217 Mulberry St, New York, NY 10012, USA",
+    "lat": 40.7222273,
+    "lon": -73.9962999,
+    "website": "http://www.bematchaful.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.bematchaful.com/",
+      "http://www.bematchaful.com"
+    ]
+  },
+  {
+    "name": "Cha Cha Matcha (FLATIRON)",
+    "address": "922 Broadway, New York, NY 10010, USA",
+    "lat": 40.7399024,
+    "lon": -73.9893359,
+    "website": "https://chachamatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@chachamatcha.com",
+    "crawled_urls": [
+      "https://chachamatcha.com/",
+      "https://chachamatcha.com/pages/contact-us",
+      "https://chachamatcha.com"
+    ]
+  },
+  {
+    "name": "Cha Cha Matcha (Bryant Park)",
+    "address": "501 5th Ave, New York, NY 10017, USA",
+    "lat": 40.7532555,
+    "lon": -73.98084829999999,
+    "website": "https://chachamatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@chachamatcha.com",
+    "crawled_urls": [
+      "https://chachamatcha.com/",
+      "https://chachamatcha.com/pages/contact-us",
+      "https://chachamatcha.com"
+    ]
+  },
+  {
+    "name": "Matchaful @ Clean Market",
+    "address": "240 E 54th St, New York, NY 10022, USA",
+    "lat": 40.7574551,
+    "lon": -73.9674876,
+    "website": "http://bematchaful.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://bematchaful.com/",
+      "http://bematchaful.com"
+    ]
+  },
+  {
+    "name": "Cafe Aroma",
+    "address": "502 9th Ave, New York, NY 10018, USA",
+    "lat": 40.7559371,
+    "lon": -73.9941049,
+    "website": "https://cafearomaorder.com/website1",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://cafearomaorder.com/website1"
+    ]
+  },
+  {
+    "name": "Cafe Bureau",
+    "address": "251 Grand St, Brooklyn, NY 11211, USA",
+    "lat": 40.713526,
+    "lon": -73.9586503,
+    "website": "http://bureau.cafe/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "support@bureau.cafe",
+    "crawled_urls": [
+      "http://bureau.cafe/",
+      "http://bureau.cafe"
+    ]
+  },
+  {
+    "name": "Madame Bonté Café",
+    "address": "205 E 66th St, New York, NY 10065, USA",
+    "lat": 40.7658117,
+    "lon": -73.9628946,
+    "website": "http://madamebonte.com/",
+    "source": "google",
+    "mission_excerpt": "Visit us at our original location on 2nd Ave between 94th and 95th, or enjoy our large downstairs seating area and backyard patio located on 84th Street between 1st and 2nd Avenue. We also recently opened our third location on 66th Street between 2nd and 3rd Ave.",
+    "contact_email": null,
+    "crawled_urls": [
+      "http://madamebonte.com/",
+      "https://www.madamebonte.com/about",
+      "https://www.madamebonte.com/contact",
+      "https://www.madamebonte.com/about?hsLang=en",
+      "http://madamebonte.com"
+    ]
+  },
+  {
+    "name": "Silk Road Cafe",
+    "address": "30 Mott St, New York, NY 10013, USA",
+    "lat": 40.7146964,
+    "lon": -73.99872069999999,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Bird & Branch Coffee Roasters",
+    "address": "359 W 45th St, New York, NY 10036, USA",
+    "lat": 40.7602998,
+    "lon": -73.9907758,
+    "website": "http://www.birdandbranch.com/",
+    "source": "google",
+    "mission_excerpt": "A SPECIALTY COFFEE SHOP WITH A MISSION TO RESTORE THE CITY",
+    "contact_email": "info@birdandbranch.com",
+    "crawled_urls": [
+      "http://www.birdandbranch.com/",
+      "http://www.birdandbranch.com/pages/about-us"
+    ]
+  },
+  {
+    "name": "U&M Cafe bakery",
+    "address": "303 Grand St, New York, NY 10002, USA",
+    "lat": 40.7172907,
+    "lon": -73.9918519,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Cha Cha Matcha (DUMBO)",
+    "address": "55 Water St, Brooklyn, NY 11201, USA",
+    "lat": 40.7034191,
+    "lon": -73.99160719999999,
+    "website": "http://www.chachamatcha.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": "hello@chachamatcha.com",
+    "crawled_urls": [
+      "http://www.chachamatcha.com/",
+      "http://www.chachamatcha.com/pages/contact-us",
+      "http://www.chachamatcha.com"
+    ]
+  },
+  {
+    "name": "Matcha Cafe Maiko",
+    "address": "132 Bowery, New York, NY 10013, USA",
+    "lat": 40.7190257,
+    "lon": -73.9948345,
+    "website": "https://www.matchacafe-maiko.com/eng/",
+    "source": "google",
+    "mission_excerpt": "Uji is a place in the southern part of Kyoto and is renowned for making topnotch, highly nutritious matcha. \r\n\t\t\t\tThe area is ideal as there is plenty of mist, which protects against frost from degrading product quality.\r\n\t\t\t\tIt's the best place in Japan and they do whatever's necessary to keep that reputation intact. Our matcha comes from Harima Garden, which has been in operation since 1858.\r\n\t\t\t\tTheir product is high quality and delivers a great smell and outstanding taste.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.matchacafe-maiko.com/eng/",
+      "https://www.matchacafe-maiko.com/eng/about/",
+      "https://www.matchacafe-maiko.com/eng/contact/",
+      "http://www.matchacafe-maiko.com/eng/contact/",
+      "http://www.matchacafe-maiko.com/eng/company/",
+      "https://www.matchacafe-maiko.com/eng/company/",
+      "https://www.matchacafe-maiko.com",
+      "https://www.matchacafe-maiko.com/about/",
+      "https://www.matchacafe-maiko.com/contact/",
+      "http://www.matchacafe-maiko.com/contact/",
+      "http://www.matchacafe-maiko.com/company/",
+      "https://www.matchacafe-maiko.com/company/"
+    ]
+  },
+  {
+    "name": "Matchaful",
+    "address": "184 Prince St, New York, NY 10012, USA",
+    "lat": 40.72629269999999,
+    "lon": -74.0021651,
+    "website": "http://bematchaful.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://bematchaful.com/",
+      "http://bematchaful.com"
+    ]
+  },
+  {
+    "name": "Sonbul - Korean Cafe and Kitchen",
+    "address": "356 Throop Ave, Brooklyn, NY 11221, USA",
+    "lat": 40.6920119,
+    "lon": -73.94290459999999,
+    "website": "https://www.sonbulnyc.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.sonbulnyc.com/",
+      "https://www.sonbulnyc.com"
+    ]
+  },
+  {
+    "name": "Matcha Cafe Maiko",
+    "address": "115 Jersey St, Boston, MA 02215, USA",
+    "lat": 42.3426687,
+    "lon": -71.0971197,
+    "website": "http://www.matchamaikobos.com/",
+    "source": "google",
+    "mission_excerpt": "For business inquiries and applications, please contact matchamaiko617@gmail.com or contact (617) 322-5360.",
+    "contact_email": "matchamaiko617@gmail.com",
+    "crawled_urls": [
+      "http://www.matchamaikobos.com/",
+      "http://www.matchamaikobos.com/pages/contact-us"
+    ]
+  },
+  {
+    "name": "Kam Hing Coffee Shop",
+    "address": "118 Baxter St, New York, NY 10013, USA",
+    "lat": 40.7179794,
+    "lon": -73.9992065,
+    "website": "https://www.newkamhing.com/#menu",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.newkamhing.com/#menu",
+      "https://www.newkamhing.com"
+    ]
+  },
+  {
+    "name": "Lê Phin",
+    "address": "259 E 10th St, New York, NY 10009, USA",
+    "lat": 40.7285073,
+    "lon": -73.9834905,
+    "website": null,
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Lady M Cake Boutique - New York City",
+    "address": "36 W 40th St, New York, NY 10018, USA",
+    "lat": 40.7527864,
+    "lon": -73.98361489999999,
+    "website": "http://www.ladym.com/",
+    "source": "google",
+    "mission_excerpt": "Lady M is a New York City luxury confections brand with boutique locations worldwide. Created in 2001 and led by CEO Ken Romaniszyn, Lady M is most famous for the creation of Signature Mille Crêpes. Lady M marries French pastry techniques with Japanese sensibilities, resulting in delicate cakes that are a touch sweet and perfect for every occasion.",
+    "contact_email": "hello@ladym.com",
+    "crawled_urls": [
+      "http://www.ladym.com/",
+      "http://www.ladym.com/who-we-are",
+      "http://www.ladym.com/collections/cakes/about",
+      "http://www.ladym.com/contact"
+    ]
+  },
+  {
+    "name": "Innisfree Green Cafe",
+    "address": "1235-1 Seogwang-ri, Andeok-myeon, Seogwipo, Jeju-do, South Korea",
+    "lat": 33.3063723,
+    "lon": 126.2906709,
+    "website": "http://www.innisfree.co.kr/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": []
+  },
+  {
+    "name": "Birch Coffee",
+    "address": "423 8th Ave Kiosk A2, New York, NY 10001, USA",
+    "lat": 40.750729,
+    "lon": -73.9952215,
+    "website": "https://shop.birchcoffee.com/pages/visit",
+    "source": "google",
+    "mission_excerpt": "Every cup of coffee is a story written by many hands. After it passes from the farmers to the  harvesters to the processors, to the exporters and our team of dedicated roasters. Its final step is in the hands of our dedicated baristas before it finds its way into yours. Every hand along the way adds value, intention, and purpose - a shared journey from crop to cup, made possible by human connection.",
+    "contact_email": "30thstreet@birchcoffee.com",
+    "crawled_urls": [
+      "https://shop.birchcoffee.com/pages/visit",
+      "https://shop.birchcoffee.com/pages/about"
+    ]
+  },
+  {
+    "name": "Juice & Joy Organic Coffee",
+    "address": "434 6th Ave, New York, NY 10011, USA",
+    "lat": 40.7345839,
+    "lon": -73.99862949999999,
+    "website": "http://www.juiceandjoy.com/",
+    "source": "google",
+    "mission_excerpt": null,
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.juiceandjoy.com/",
+      "http://www.juiceandjoy.com"
+    ]
+  },
+  {
+    "name": "Popbar -Delivery Kitchen- @ Jay Suites",
+    "address": "15 W 38th St, New York, NY 10018, USA",
+    "lat": 40.751606,
+    "lon": -73.9836916,
+    "website": "http://www.pop-bar.com/",
+    "source": "google",
+    "mission_excerpt": "Learn about our journey from Italy to New York City, and beyond!  Over the years, we've added to our menu, grown our team, and expanded into new territories, but we still operate with the same 'mom and pop' values that started it all.",
+    "contact_email": null,
+    "crawled_urls": [
+      "http://www.pop-bar.com/",
+      "http://www.pop-bar.com/pages/about",
+      "http://www.pop-bar.com/pages/faq-about",
+      "http://www.pop-bar.com/pages/support",
+      "http://www.pop-bar.com/pages/contact",
+      "http://www.pop-bar.com"
+    ]
+  },
+  {
+    "name": "Matcha Cafe Maiko",
+    "address": "923 Race St, Philadelphia, PA 19107, USA",
+    "lat": 39.9554986,
+    "lon": -75.1551259,
+    "website": "https://www.matchacafe-maiko.com/eng/",
+    "source": "google",
+    "mission_excerpt": "Uji is a place in the southern part of Kyoto and is renowned for making topnotch, highly nutritious matcha. \r\n\t\t\t\tThe area is ideal as there is plenty of mist, which protects against frost from degrading product quality.\r\n\t\t\t\tIt's the best place in Japan and they do whatever's necessary to keep that reputation intact. Our matcha comes from Harima Garden, which has been in operation since 1858.\r\n\t\t\t\tTheir product is high quality and delivers a great smell and outstanding taste.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.matchacafe-maiko.com/eng/",
+      "https://www.matchacafe-maiko.com/eng/about/",
+      "https://www.matchacafe-maiko.com/eng/contact/",
+      "http://www.matchacafe-maiko.com/eng/contact/",
+      "http://www.matchacafe-maiko.com/eng/company/",
+      "https://www.matchacafe-maiko.com/eng/company/",
+      "https://www.matchacafe-maiko.com",
+      "https://www.matchacafe-maiko.com/about/",
+      "https://www.matchacafe-maiko.com/contact/",
+      "http://www.matchacafe-maiko.com/contact/",
+      "http://www.matchacafe-maiko.com/company/",
+      "https://www.matchacafe-maiko.com/company/"
+    ]
+  },
+  {
+    "name": "Maiko Matcha Cafe",
+    "address": "133-33 39th Ave, fh21, Flushing, NY 11354, USA",
+    "lat": 40.7598781,
+    "lon": -73.8342332,
+    "website": "https://www.matchacafe-maiko.com/eng/",
+    "source": "google",
+    "mission_excerpt": "Uji is a place in the southern part of Kyoto and is renowned for making topnotch, highly nutritious matcha. \r\n\t\t\t\tThe area is ideal as there is plenty of mist, which protects against frost from degrading product quality.\r\n\t\t\t\tIt's the best place in Japan and they do whatever's necessary to keep that reputation intact. Our matcha comes from Harima Garden, which has been in operation since 1858.\r\n\t\t\t\tTheir product is high quality and delivers a great smell and outstanding taste.",
+    "contact_email": null,
+    "crawled_urls": [
+      "https://www.matchacafe-maiko.com/eng/",
+      "https://www.matchacafe-maiko.com/eng/about/",
+      "https://www.matchacafe-maiko.com/eng/contact/",
+      "http://www.matchacafe-maiko.com/eng/contact/",
+      "http://www.matchacafe-maiko.com/eng/company/",
+      "https://www.matchacafe-maiko.com/eng/company/",
+      "https://www.matchacafe-maiko.com",
+      "https://www.matchacafe-maiko.com/about/",
+      "https://www.matchacafe-maiko.com/contact/",
+      "http://www.matchacafe-maiko.com/contact/",
+      "http://www.matchacafe-maiko.com/company/",
+      "https://www.matchacafe-maiko.com/company/"
+    ]
+  }
+]
