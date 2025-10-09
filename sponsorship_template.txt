@@ -1,0 +1,28 @@
+Subject: {{shop_name}} Support & Sponsorship for a Columbia University student-run Martial Arts Club Event
+
+Dear {{shop_name}} {{team_or_inquiries}},
+
+I’m Richard Li, Vice President of Columbia University Wushu, New York City’s largest collegiate martial arts club. We host public practices, organize performances, and attend both regional and national Wushu competitions. Our work is shown on our website, columbiawushu.org, and our instagram page, @columbiawushu. The events our club hosts are organized by undergraduate students alone; students seeking to empower our university’s community, and enable the student body to engage with Asian culture. 
+
+Last year, Columbia Wushu hosted our first annual showcase, which hosted 5+ other performing-arts clubs, boasted a Red Bull sponsorship, and garnered over 200+ student body attendees. This year, Columbia Wushu, along with Columbia Lion Dance, are starting the year off strong by organizing a workshop on {{event_date}} at {{event_time}} in {{event_place}} meant to teach new and interested individuals the fundamentals of Wushu and Lion Dancing. In order to expand and incentivize engagement with the student body, we are kindly asking for your support in the form of <dynamic>refreshments, or promotional materials; drinks, stickers, pins, clothes, etc.</dynamic>
+
+<dynamic>We felt compelled to reach out to you not only because our members enjoy your products, but also because we believe your franchise’s values closely align with our club’s.</dynamic> If this event aligns with {{shop_name}}’s mission, then it’s an amazing opportunity to connect with a strong undergraduate community in New York. Any level of help would meaningfully expand outreach to Asian culture on our campus. 
+
+In return, we’ll deliver clear impact and visibility:
+
+Recognition: Acknowledgment of your brand on event banners (within reserved venues), following Columbia branding policies.
+
+Touchpoint: Direct communication with Columbia University’s largest martial arts club.
+
+Shoutouts: Mentions across our social media and newsletters.
+
+Special Opportunities: Invitations to attend our performances as guests of honor.
+
+Any other mutually agreed promotional synergy.
+
+If this aligns with {{shop_name}}'s mission, I’d love to schedule a brief call. Thank you for considering a partnership that would directly reduce barriers and increase outreach. We believe this collaboration could deliver a meaningful impact, for both your organization and our student community.
+
+Warm regards,
+Richard Li
+
+rjl2194@columbia.edu | Vice President, Columbia Wushu Club | IG: @columbiawushu
