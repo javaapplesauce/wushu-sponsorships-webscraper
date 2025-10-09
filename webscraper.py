@@ -22,10 +22,13 @@ import logging
 import hashlib
 from dataclasses import dataclass, asdict
 from typing import List, Dict, Any, Optional, Tuple
+import html
 
 import aiohttp
 from bs4 import BeautifulSoup
 import tldextract
+import string
+from urllib.parse import urlparse
 
 # ---------------------------
 # CLI / Config
@@ -34,15 +37,27 @@ import argparse
 
 CATEGORIES_CANON = {
     "boba": [
-        # search phrases
-        "boba", "bubble tea", "tapioca tea", "pearl milk tea", "珍珠奶茶",
+        # generic terms
+        "boba", "bubble tea", "milk tea", "pearl milk tea", "tapioca", "珍珠奶茶", "奶茶", "泡沫紅茶",
+        # shop types
+        "tea house", "tea shop", "茶館",
+        # popular brands (helps recall in Google/Yelp/OSM)
+        "Gong Cha", "Kung Fu Tea", "Chatime", "KOI Thé", "Tiger Sugar", "Machi Machi",
+        "Yi Fang", "HEYTEA", "CoCo Fresh Tea", "Sharetea", "Happy Lemon", "Kungfutea",
+        "The Alley", "Ten Ren Tea", "Vivi Bubble Tea", "Teazzi", "TBaar"
+    ],
+    "asian_tea": [
+        "asian tea", "japanese tea", "korean tea", "taiwanese tea", "matcha", "sencha",
+        "tea ceremony", "茶", "抹茶", "煎茶", "日式茶屋", "韓式茶屋", "台灣茶",
+        # common brand names still useful here
+        "Gong Cha", "Ten Ren Tea", "Muji Tea", "Ippodo", "Ito En"
     ],
     "asian_specialty": [
         "asian grocery", "asian market", "korean market", "japanese market", "chinese supermarket",
         "h-mart", "99 ranch", "mitsuwa", "japanese grocery", "korean grocery",
     ],
     "matcha": [
-        "matcha", "matcha cafe", "抹茶",
+        "matcha", "matcha cafe", "抹茶", "matcha latte", "uchu matcha", "ceremonial matcha"
     ],
     "asian_skincare": [
         "k-beauty", "korean skincare", "asian skincare", "j-beauty", "cosrx", "innisfree", "sulwhasoo",
@@ -67,6 +82,65 @@ DEFAULT_HEADERS = {
 }
 
 logging.basicConfig(level=logging.INFO, format="[%(levelname)s] %(message)s")
+
+def _haversine_m(lat1, lon1, lat2, lon2) -> float:
+    """Great-circle distance in meters."""
+    if None in (lat1, lon1, lat2, lon2):
+        return float("inf")
+    R = 6371000.0  # meters
+    p1, p2 = math.radians(lat1), math.radians(lat2)
+    dphi = math.radians(lat2 - lat1)
+    dlmb = math.radians(lon2 - lon1)
+    a = math.sin(dphi/2)**2 + math.cos(p1)*math.cos(p2)*math.sin(dlmb/2)**2
+    return 2 * R * math.asin(math.sqrt(a))
+
+_STOPWORDS = {
+    "bubble", "boba", "tea", "milk", "shop", "house", "cafe", "co", "inc", "llc",
+    "the", "and", "of"
+}
+
+def _normalize_name(name: Optional[str]) -> str:
+    if not name:
+        return ""
+    s = name.lower()
+    s = s.translate(str.maketrans("", "", string.punctuation))
+    toks = [t for t in s.split() if t and t not in _STOPWORDS]
+    return " ".join(toks)
+
+def _domain(url: Optional[str]) -> str:
+    try:
+        if not url:
+            return ""
+        net = urlparse(url).netloc.lower()
+        # strip leading www.
+        return net[4:] if net.startswith("www.") else net
+    except Exception:
+        return ""
+    
+    
+COMMON_CONTACT_PATHS = [
+    "/contact", "/contact-us", "/contactus", "/contacts",
+    "/about", "/about-us", "/aboutus", "/support", "/help",
+    "/customer-service", "/store-locator", "/locations",
+    "/team", "/company", "/press", "/faq", "/policies", "/privacy", "/terms"
+]
+
+def candidate_contact_urls(root: str) -> List[str]:
+    # root is like https://example.com
+    out = []
+    base = root.rstrip("/")
+    for p in COMMON_CONTACT_PATHS:
+        out.append(base + p)
+        # also with trailing slash
+        out.append(base + p + "/")
+    # de-dupe
+    seen = set(); dedup = []
+    for u in out:
+        if u not in seen:
+            dedup.append(u); seen.add(u)
+    return dedup
+
+
 
 # ---------------------------
 # Geocoding helpers (free via Nominatim)
@@ -99,7 +173,6 @@ async def google_places_search(session, lat, lon, radius_m, terms: List[str]) ->
             "query": f"{term}",
             "location": f"{lat},{lon}",
             "radius": radius_m,
-            "type": "cafe",  # broad; still returns many relevant places
             "key": key,
         }
         bases.append((url, params))
@@ -312,31 +385,96 @@ def extract_mission_text(html: str) -> Optional[str]:
         return blob[:700]
     return None
 
-def extract_email(html: str) -> Optional[str]:
-    # priority: mailto links
-    soup = BeautifulSoup(html, "html.parser")
+def _cf_decrypt(hex_str: str) -> Optional[str]:
+    # Cloudflare email protection: <a data-cfemail="...">
+    try:
+        data = bytes.fromhex(hex_str)
+        key = data[0]
+        return "".join(chr(b ^ key) for b in data[1:])
+    except Exception:
+        return None
+
+_AT_DOT_PATTERNS = [
+    (re.compile(r"\s*\[\s*at\s*\]\s*", re.I), "@"),
+    (re.compile(r"\s*\(\s*at\s*\)\s*", re.I), "@"),
+    (re.compile(r"\s+at\s+", re.I), "@"),
+    (re.compile(r"\s*\[\s*dot\s*\]\s*", re.I), "."),
+    (re.compile(r"\s*\(\s*dot\s*\)\s*", re.I), "."),
+    (re.compile(r"\s+dot\s+", re.I), "."),
+]
+
+def _deobfuscate_text(txt: str) -> str:
+    # HTML entities, then common obfuscations
+    s = html.unescape(txt)
+    for pat, repl in _AT_DOT_PATTERNS:
+        s = pat.sub(repl, s)
+    # strip extraneous spaces around @ and .
+    s = re.sub(r"\s*@\s*", "@", s)
+    s = re.sub(r"\s*\.\s*", ".", s)
+    return s
+
+def extract_email(html_str: str) -> Optional[str]:
+    soup = BeautifulSoup(html_str, "html.parser")
+
+    # 1) Cloudflare-protected addresses
+    for a in soup.select("[data-cfemail]"):
+        dec = _cf_decrypt(a.get("data-cfemail"))
+        if dec and EMAIL_REGEX.fullmatch(dec):
+            return dec
+
+    # 2) mailto links
     for a in soup.find_all("a", href=True):
-        href = a["href"].lower()
-        if href.startswith("mailto:"):
+        href = a["href"]
+        if href.lower().startswith("mailto:"):
             em = href.split(":",1)[1].split("?")[0].strip()
-            if em:
+            em = _deobfuscate_text(em)
+            if EMAIL_REGEX.fullmatch(em):
                 return em
-    # fallback: regex
-    all_text = soup.get_text(" ", strip=True)
-    emails = EMAIL_REGEX.findall(all_text)
-    # prefer generic inboxes
-    def score(e: str) -> int:
-        e_low = e.lower()
-        score = 0
-        if any(k in e_low for k in ["info", "hello", "contact", "support", "hi", "team", "care", "service"]):
-            score += 2
-        if any(k in e_low for k in ["gmail.com", "yahoo.com", "outlook.com"]):
-            score -= 1
-        return score
+
+    # 3) JSON-LD contactPoint (schema.org)
+    for script in soup.find_all("script", type=lambda t: t and "json" in t.lower()):
+        try:
+            data = json.loads(script.get_text(strip=True))
+        except Exception:
+            continue
+        # normalize to list
+        objs = data if isinstance(data, list) else [data]
+        for obj in objs:
+            # organization.contactPoint[].email
+            cp = obj.get("contactPoint") if isinstance(obj, dict) else None
+            if isinstance(cp, dict): cp = [cp]
+            if isinstance(cp, list):
+                for c in cp:
+                    em = c.get("email")
+                    if isinstance(em, str):
+                        em = _deobfuscate_text(em)
+                        if EMAIL_REGEX.fullmatch(em):
+                            return em
+            # fallback: obj.get("email")
+            em = obj.get("email") if isinstance(obj, dict) else None
+            if isinstance(em, str):
+                em = _deobfuscate_text(em)
+                if EMAIL_REGEX.fullmatch(em):
+                    return em
+
+    # 4) Page text (deobfuscate first)
+    text = soup.get_text(" ", strip=True)
+    text = _deobfuscate_text(text)
+    emails = set(EMAIL_REGEX.findall(text))
     if emails:
-        emails = sorted(set(emails), key=score, reverse=True)
-        return emails[0]
+        # prefer generic inboxes
+        def score(e: str) -> int:
+            e_low = e.lower()
+            s = 0
+            if any(k in e_low for k in ["info@", "hello@", "contact@", "support@", "hi@", "team@", "care@", "service@"]):
+                s += 3
+            if any(k in e_low for k in ["gmail.com", "yahoo.com", "outlook.com"]):
+                s -= 1
+            return s
+        return sorted(emails, key=score, reverse=True)[0]
+
     return None
+
 
 async def scrape_site(session: aiohttp.ClientSession, item: Dict[str, Any], robots: RobotsCache) -> ScrapeResult:
     name = item.get("name")
@@ -350,6 +488,7 @@ async def scrape_site(session: aiohttp.ClientSession, item: Dict[str, Any], robo
         parsed = urlparse(website)
         root = f"{parsed.scheme}://{parsed.netloc}"
         start_urls = [website, root]
+        start_urls.extend(candidate_contact_urls(root))
         visited = set()
         for u in start_urls:
             if u in visited:
@@ -358,6 +497,16 @@ async def scrape_site(session: aiohttp.ClientSession, item: Dict[str, Any], robo
             if not await robots.allowed(session, u):
                 continue
             html = await fetch_text(session, u)
+            
+            # favor footer blocks
+            for footer in soup.find_all(["footer"]):
+                em = extract_email(str(footer))
+                if em: email = email or em
+            # and any script tags (some sites embed plain emails in config)
+            for script in soup.find_all("script"):
+                em = extract_email(script.get_text(" ", strip=True))
+                if em: email = email or em
+
             if not html:
                 continue
             crawled.append(u)
@@ -418,15 +567,70 @@ async def search_shops(provider: str, location: str, radius_m: int, categories: 
         else:
             raise ValueError("provider must be one of: google, yelp, osm")
 
-        # keep only unique by (name, address) or website
-        uniq = {}
+       # --- distance-aware de-duplication (prefer closer to center) ---
+        center_lat, center_lon = lat, lon
+
+        # annotate with distance to center
         for f in found:
-            key = (f.get("website") or "", (f.get("name") or "") + (f.get("address") or ""))
-            if key not in uniq:
-                uniq[key] = f
-        items = list(uniq.values())
-        logging.info("Found %d candidate shops.", len(items))
-        return items
+            f["__dist_m"] = _haversine_m(center_lat, center_lon, f.get("lat"), f.get("lon"))
+            f["__name_norm"] = _normalize_name(f.get("name"))
+            f["__addr_norm"] = (f.get("address") or "").strip().lower()
+            f["__domain"] = _domain(f.get("website"))
+
+        # sort so the NEAREST entries come first; ties put items with real coords ahead of missing
+        found.sort(key=lambda x: (x["__dist_m"], 0 if x.get("lat") is not None else 1))
+
+        kept: List[Dict[str, Any]] = []
+        seen_keys = set()  # coarse signatures
+        PROX_THRESHOLD_M = 120.0  # treat as same place if very close and same-ish name
+
+        kept: List[Dict[str, Any]] = []
+        seen_keys = set()  # store 3-tuples consistently
+        PROX_THRESHOLD_M = 120.0
+
+        for f in found:
+            name_norm = f["__name_norm"]
+            addr_norm = f["__addr_norm"]
+            domain = f["__domain"]
+
+            # build consistent 3-tuples; skip empties later
+            sigs = set()
+            if name_norm or addr_norm:
+                sigs.add(("name+addr", name_norm, addr_norm))
+            if name_norm or domain:
+                sigs.add(("name+domain", name_norm, domain))
+            if domain:
+                sigs.add(("domain", domain, ""))  # keep 3-tuple shape
+
+            # if any signature already taken, skip this farther one
+            if any(s in seen_keys for s in sigs):
+                continue
+
+            # proximity check: same normalized name and very close → treat as dup
+            is_dup_by_proximity = False
+            if name_norm:
+                for g in kept:
+                    if name_norm == g.get("__name_norm"):
+                        d = _haversine_m(f.get("lat"), f.get("lon"), g.get("lat"), g.get("lon"))
+                        if d <= PROX_THRESHOLD_M:
+                            is_dup_by_proximity = True
+                            break
+            if is_dup_by_proximity:
+                continue
+
+            # keep this one (we sorted nearest-first), mark signatures as seen
+            kept.append(f)
+            for s in sigs:
+                seen_keys.add(s)
+
+        # clean temp fields
+        for f in kept:
+            for k in ("__dist_m", "__name_norm", "__addr_norm", "__domain"):
+                f.pop(k, None)
+
+        logging.info("Found %d candidate shops after de-dup.", len(kept))
+        return kept
+
 
 # ---------------------------
 # Main
