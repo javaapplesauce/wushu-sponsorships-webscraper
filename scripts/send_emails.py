@@ -4,6 +4,7 @@ import smtplib
 from email.mime.text import MIMEText
 from email.mime.multipart import MIMEMultipart
 from dotenv import load_dotenv
+import time
 
 load_dotenv()  # load EMAIL_USER, EMAIL_PASS from .env
 
@@ -27,7 +28,7 @@ def send_email(to_email, subject, body, sender_email, sender_pass):
 
 def main():
     input_file = "personalized_emails/mail_merge.json"  # path to your JSON file
-
+    delay_seconds = 10
     # Load sender credentials
     sender_email = os.getenv("EMAIL_USER")
     sender_pass = os.getenv("EMAIL_PASS")
@@ -44,7 +45,8 @@ def main():
 
     # Send each email
     for i, entry in enumerate(emails):
-        to_email = entry.get("to_email")
+        # to_email = entry.get("to_email")
+        to_email = "lirichard6474@gmail.com"
         subject = entry.get("subject")
         body = entry.get("body")
 
@@ -54,6 +56,10 @@ def main():
 
         print(f"[{i+1}] ✉️  Sending to: {to_email} ({subject})")
         send_email(to_email, subject, body, sender_email, sender_pass)
+        
+        if i < len(emails) - 1:  # Don't sleep after the last email
+            print(f"⏳ Waiting {delay_seconds} seconds before next email...")
+            time.sleep(delay_seconds)
 
 if __name__ == "__main__":
     main()
