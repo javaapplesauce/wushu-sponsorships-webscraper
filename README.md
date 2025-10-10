@@ -10,7 +10,7 @@ This pipeline:
 
 ---
 
-### 🧭 Directory Structure
+### Directory Structure
 
 ```
 wushu-sponsorships-webscraper/
@@ -39,7 +39,7 @@ wushu-sponsorships-webscraper/
 
 ---
 
-### ⚙️ Setup
+### Setup
 
 #### 1. Clone the repo
 
@@ -67,12 +67,12 @@ EMAIL_USER=your_email@gmail.com
 EMAIL_PASS=your_app_specific_password
 ```
 
-> 💡 *To use Gmail, create an “App Password” under*
+> *To use Gmail, create an “App Password” under*
 > [Google Account → Security → App Passwords](https://myaccount.google.com/apppasswords)
 
 ---
 
-### 🚀 Usage
+### Usage
 
 #### **Option A — Full pipeline (recommended)**
 
@@ -93,10 +93,10 @@ This will:
 If you want to inspect intermediate results:
 
 ```bash
-# 1️⃣ Scrape businesses
+# Scrape businesses
 python webscraper.py --location "New York, NY" --radius 2000 --categories "boba,matcha,skincare"
 
-# 2️⃣ Personalize emails
+# Personalize emails
 python personalize_emails.py \
   --csv results_nyc/shops.csv \
   --template sponsorship_template.txt \
@@ -106,13 +106,13 @@ python personalize_emails.py \
   --event-place "Columbia Sundial" \
   --out personalized_emails
 
-# 3️⃣ Send emails
+# Send emails
 python send_emails.py
 ```
 
 ---
 
-### 🧠 Customization
+### Customization
 
 | File                       | Purpose                                                                           |
 | -------------------------- | --------------------------------------------------------------------------------- |
@@ -123,7 +123,7 @@ python send_emails.py
 
 ---
 
-### ⚡ Example Output
+### Example Output
 
 After a successful run:
 
@@ -144,7 +144,7 @@ Console output:
 
 ---
 
-### 🛡️ Safety Notes
+### Safety Notes
 
 * **Do not commit `.env` or generated email data.**
 * **Use responsibly** — avoid spam.
@@ -152,7 +152,7 @@ Console output:
 
 ---
 
-### 💡 Future Ideas
+### Future Ideas
 
 * Integrate with Google Sheets for live sponsor tracking
 * Add progress dashboards
